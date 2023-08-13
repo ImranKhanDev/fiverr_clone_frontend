@@ -6,17 +6,17 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
-
   const { pathname } = useLocation();
 
-  const isActive = () => {
-    window.scrollY > 0 ? setActive(true) : setActive(false);
-  };
   const currentUser = {
     id: 1,
     userName: "John Doe",
     isSeller: true,
   };
+  const isActive = () => {
+    window.scrollY > 0 ? setActive(true) : setActive(false);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", isActive);
 
@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* ,menu */}
-      {active ||
+      {active  ||  
         (pathname !== "/" && (
           <>
             <hr />

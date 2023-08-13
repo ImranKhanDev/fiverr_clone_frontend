@@ -8,7 +8,12 @@ justify-content: center;
         width:760px;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
         color: lightgray;
+    }
+    img{
+        height: 50px;
+        object-fit: contain;
     }
 }

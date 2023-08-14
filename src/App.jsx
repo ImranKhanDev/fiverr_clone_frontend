@@ -28,12 +28,12 @@ function App() {
       children: [
         { path: "/", element: <Home /> },
         { path: "/gigs", element: <Gigs /> },
-        { path: "/gig:id", element: <Gig /> },
+        { path: "/gig/:id", element: <Gig /> },
         { path: "/orders", element: <Orders /> },
         { path: "/mygigs", element: <MyGigs /> },
         { path: "/add", element: <Add /> },
         { path: "/messages", element: <Messages /> },
-        { path: "/message:id", element: <Message /> },
+        { path: "/message/:id", element: <Message /> },
       ],
     },
   ]);

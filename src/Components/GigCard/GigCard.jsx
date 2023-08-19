@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import "./GigCard.scss"
 import { Link } from 'react-router-dom'
+
 const GigCard = ({item}) => {
   return (
     <Link to="/gig/123" className='link'>

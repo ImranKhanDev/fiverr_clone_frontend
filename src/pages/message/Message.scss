@@ -1,0 +1,92 @@
+.message {
+    display: flex;
+    justify-content: center;
+  
+    .container {
+      width: 1200px;
+      margin: 50px;
+  
+      .breadcrumbs {
+        font-weight: 300;
+        font-style: 13px;
+        color: #555;
+      }
+  
+      .messages {
+        margin: 30px 0px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 500px;
+        overflow-y: scroll;
+  
+        .item {
+          display: flex;
+          gap: 20px;
+          max-width: 600px;
+          font-size: 18px;
+  
+          &.owner {
+            flex-direction: row-reverse;
+            align-self: flex-end;
+  
+            p {
+              border-radius: 20px 0px 20px 20px;
+              background-color: blue;
+              color: white;
+            }
+          }
+  
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: contain;
+          }
+  
+          p {
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 0 20px 20px 20px;
+            -webkit-border-radius: 0 20px 20px 20px;
+            -moz-border-radius: 0 20px 20px 20px;
+            -ms-border-radius: 0 20px 20px 20px;
+            -o-border-radius: 0 20px 20px 20px;
+          }
+        }
+      }
+      hr {
+        height: 0px;
+        border: 0.5px solid lightgray;
+      }
+      .write {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        textarea {
+          width: 80%;
+          height: 100px;
+          padding: 10px;
+          border: 1px solid lightgray;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+        button {
+          background-color: #1dbf73;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          width: 100px;
+        }
+      }
+    }
+  }
+  
